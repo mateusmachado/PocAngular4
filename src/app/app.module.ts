@@ -9,13 +9,17 @@ import { CharactersListComponent } from './components/characters-list/characters
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { MovieComponent } from './components/movie/movie.component';
+import { CharacterComponent } from './components/character/character.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesListComponent,
-    CharactersListComponent
+    CharactersListComponent,
+    MovieComponent,
+    CharacterComponent
   ],
   imports: [
     BrowserModule,
