@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { MoviesListComponent } from './components/movies-list/movies-list.component';
+import { MoviesListComponent } from './modules/movies/components/movies-list/movies-list.component';
 import { CharactersListComponent } from './components/characters-list/characters-list.component';
 
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { MovieComponent } from './components/movie/movie.component';
+import { MovieComponent } from './modules/movies/components/movie/movie.component';
 import { CharacterComponent } from './components/character/character.component';
 
 
