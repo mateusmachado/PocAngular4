@@ -11,6 +11,11 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { MovieComponent } from './modules/movies/components/movie/movie.component';
 import { CharacterComponent } from './components/character/character.component';
+import { PageNotFoundComponent } from './components/page-not-found.component';
+
+import { AppRoutingModule } from './app-routing.module';
+import { MoviesRoutingModule } from './modules/movies/movies-routing.module';
+
 
 
 @NgModule({
@@ -19,22 +24,15 @@ import { CharacterComponent } from './components/character/character.component';
     MoviesListComponent,
     CharactersListComponent,
     MovieComponent,
-    CharacterComponent
+    CharacterComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([
-      {
-        path: 'movies',
-        component: MoviesListComponent
-      },
-      {
-        path: 'characters',
-        component: CharactersListComponent
-      }
-    ])
+    MoviesRoutingModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
