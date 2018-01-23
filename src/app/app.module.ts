@@ -15,7 +15,13 @@ import { PageNotFoundComponent } from './components/page-not-found.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MoviesRoutingModule } from './modules/movies/movies-routing.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
 
+import 'hammerjs';
 
 
 @NgModule({
@@ -25,14 +31,25 @@ import { MoviesRoutingModule } from './modules/movies/movies-routing.module';
     CharactersListComponent,
     MovieComponent,
     CharacterComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,    
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpModule, 
     MoviesRoutingModule,
-    AppRoutingModule,
+    AppRoutingModule,   
+    BrowserAnimationsModule,
+    NoopAnimationsModule,
+    MatButtonModule, 
+    MatCheckboxModule,
+    MatToolbarModule,
+    MatListModule,
+    
+  ],
+  exports: [
+    MatButtonModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

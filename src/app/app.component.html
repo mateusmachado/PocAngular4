@@ -1,12 +1,13 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-
-<a routerLink="/movies">Movies</a>
-<a routerLink="/characters">Characters</a>
+<mat-toolbar color="primary">
+<span>{{title}}</span>
+	<mat-toolbar-row>
+		<button mat-raised-button color="accent" routerLink="/movies">Button 1</button>
+		<button mat-raised-button color="accent" routerLink="/characters">Button 2</button>
+		<span></span>
+	</mat-toolbar-row>
+</mat-toolbar>
 
 <router-outlet></router-outlet>
 
-</div>
+
+ 
